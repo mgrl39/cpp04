@@ -6,8 +6,8 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:29 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/05 12:34:30 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/05 13:05:18 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "Animal.hpp"
