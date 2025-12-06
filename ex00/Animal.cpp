@@ -6,18 +6,17 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:29 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/05 13:13:29 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/06 20:56:52 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include <iostream>
 
-Animal::Animal()
+Animal::Animal(): type("Animal")
 {
 	std::string	msg;
 
-	this->type = "Animal";
 	msg = "Animal type '" + this->type + "' created Default Constructor Called";
 	std::cout << msg << std::endl;
 }
@@ -28,4 +27,17 @@ Animal::~Animal()
 
 	msg = "Animal type '" + this->type + "' destroyed (Destructor Called)";
 	std::cout << msg << std::endl;
+}
+
+Animal::Animal(const Animal &rhs): type(rhs.type)
+{
+	std::cout << "Animal Copy constructor called" << std::endl;
+}
+
+Animal& Animal::operator=(const Animal& rhs)
+{
+	std::cout << "Animal Copy assignment operator called" << std::endl;
+	if (this != &rhs)
+		this->type = rhs.type;
+	return (*this);
 }
