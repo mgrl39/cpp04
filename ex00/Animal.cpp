@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:29 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 21:13:31 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/06 23:28:56 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,12 @@ Animal& Animal::operator=(const Animal& rhs)
 	return (*this);
 }
 
-void	Animal::makeSound()
+void	Animal::makeSound() const
 {
 	std::cout << "The animal '" << this->type << "' makes a sound" << std::endl;
+}
+
+const std::string	Animal::getType() const
+{
+	return (this->type);
 }

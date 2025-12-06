@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:01 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 22:45:25 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:12:23 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define DOG_HPP
 
 #include "Animal.hpp"
-#include <string>
 
 class Dog: public Animal
 {
@@ -23,7 +22,7 @@ class Dog: public Animal
 		~Dog();
 		Dog(const Dog &rhs);
 		Dog &operator=(const Dog &rhs);
-		override void makeSound();
+		void makeSound() const;
 };
 
 #endif

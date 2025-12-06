@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:24 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 22:29:42 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:11:54 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CAT_HPP
 
 #include "Animal.hpp"
-#include <string>
 
 class Cat: public Animal
 {
@@ -23,7 +22,7 @@ class Cat: public Animal
 		~Cat();
 		Cat(const Cat &rhs);
 		Cat &operator=(const Cat &rhs);
-		override void makeSound();
+		void makeSound() const;
 };
 
 #endif

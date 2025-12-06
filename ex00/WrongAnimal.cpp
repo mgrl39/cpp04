@@ -6,8 +6,9 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:36:00 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/05 12:36:01 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:09:38 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "WrongAnimal.hpp"
 
