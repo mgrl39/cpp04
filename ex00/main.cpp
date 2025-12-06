@@ -6,10 +6,13 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/05 12:53:31 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/05 13:07:39 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Animal.hpp"
+
 int	main(void)
 {
+	Animal animal;
 }
