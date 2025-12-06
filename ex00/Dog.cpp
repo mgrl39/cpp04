@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 23:52:53 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:17:26 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Dog::Dog(): Animal()
 	std::string	msg;
 
 	this->type = "Dog";
-	msg = "Animal type '" + this->type + "' created Default Constructor Called";
+	msg = "'" + this->type + "' created Default Constructor Called";
 	std::cout << msg << std::endl;
 }
 

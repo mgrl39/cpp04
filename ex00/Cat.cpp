@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 23:52:02 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:18:16 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Cat::Cat(): Animal()
 	std::string	msg;
 	
 	this->type = "Cat";
-	msg = "Animal type '" + this->type + "' created Default Constructor Called";
+	msg = "'" + this->type + "' created Default Constructor Called";
 	std::cout << msg << std::endl;
 }
 
