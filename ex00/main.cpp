@@ -6,12 +6,14 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/06 23:57:32 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 00:52:43 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Dog.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 #include "Cat.hpp"
 #include <iostream>
 
@@ -59,8 +61,20 @@ void	mandatoryMain()
 	delete i;
 }
 
+void	mandatoryWrong()
+{
+	const WrongAnimal* meta = new WrongAnimal();
+	const WrongAnimal* j = new WrongCat();
+	std::cout << j->getType() << " " << std::endl;
+	meta->makeSound();
+	j->makeSound();
+	delete meta;
+	delete j;
+}
+
 int	main(void)
 {
 	// testConstructors();
 	mandatoryMain();
+	mandatoryWrong();
 }
