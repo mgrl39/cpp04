@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:42:03 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:44:56 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ Dog::~Dog()
 	std::cout << "'" << this->type << "' destroyed (Destructor called)" << std::endl;
 }
 
-// TODO: check this one
-Dog::Dog(const Dog &rhs): Animal(rhs)
+Dog::Dog(const Dog &rhs)
 {
+	*this = rhs;
 	std::cout << "Dog Copy constructor called" << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:41:51 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:44:37 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ Cat::~Cat()
 	std::cout << "'" << this->type << "' destroyed (Destructor called)" << std::endl;
 }
 
-Cat::Cat(const Cat &rhs): Animal(rhs)
+Cat::Cat(const Cat &rhs)
 {
 	std::cout << "Cat Copy constructor called" << std::endl;
+	*this = rhs;
 }
 
 Cat&	Cat::operator=(const Cat& rhs)
