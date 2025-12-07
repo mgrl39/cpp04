@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 00:17:26 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:42:03 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Dog& Dog::operator=(const Dog& rhs)
 {
 	std::cout << "Dog Copy assignment operator called" << std::endl;
 	if (this != &rhs)
-		this->type = rhs.type;
+		Animal::operator=(rhs);
 	return (*this);
 }
 
