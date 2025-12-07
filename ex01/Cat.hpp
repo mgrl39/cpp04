@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:24 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 00:11:54 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 01:11:13 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 class Cat: public Animal
 {
+	private:
+		Brain	*brain;
 	public:
 		Cat();
 		~Cat();

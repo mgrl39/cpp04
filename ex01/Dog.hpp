@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:01 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 00:12:23 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 01:10:59 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 class Dog: public Animal
 {
+	private:
+		Brain	*brain;
 	public:
 		Dog();
 		~Dog();

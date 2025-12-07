@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 00:52:43 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 02:37:55 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,17 @@ void	mandatoryWrong()
 
 int	main(void)
 {
+	const unsigned int	animal_quantity = 6;
+
+	Animal *animal[animal_quantity];
+
+	for (unsigned int i = 0 ; i < animal_quantity / 2 ; i++)
+		animal[i] = new Cat();
+	for (unsigned int i = animal_quantity / 2 ; i < animal_quantity ; i++)
+		animal[i] = new Dog();
+	for (unsigned int i = 0 ; i < animal_quantity ; i++)
+		delete animal[i];
 	// testConstructors();
-	mandatoryMain();
-	mandatoryWrong();
+	// mandatoryMain();
+	// mandatoryWrong();
 }
