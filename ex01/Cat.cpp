@@ -6,11 +6,10 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 02:38:44 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:35:01 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Brain.hpp"
 #include "Cat.hpp"
 #include <iostream>
 

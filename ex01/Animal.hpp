@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:35 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 01:10:47 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:34:18 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ANIMAL_HPP
 
 #include <string>
-#include "Brain.hpp"
 
 class Animal
 {
