@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:33:56 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 21:19:15 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	testConstructors(void)
 
 }
 
+// First exercise
 void	mandatoryMain()
 {
 	const Animal* meta = new Animal();
@@ -72,18 +73,44 @@ void	mandatoryWrong()
 	delete j;
 }
 
+/* Second exercise:
+ * A copy of a Dog or a Cat mustn’t be shallow. 
+ * Thus, you have to test that your copies are deep copies!
+ */
+void	secondExercise()
+{
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	//j->setIdea(0, "Hello World");
+	j->makeSound();
+	delete j;//should not create a leak
+	delete i;
+}
+
+#include <typeinfo>
 int	main(void)
 {
+	/*
 	const unsigned int	animal_quantity = 6;
 
 	Animal *animal[animal_quantity];
 
+	(void)animal_quantity;
+	(void)animal;
+	*/
+	secondExercise();
+	/*
 	for (unsigned int i = 0 ; i < animal_quantity / 2 ; i++)
 		animal[i] = new Cat();
 	for (unsigned int i = animal_quantity / 2 ; i < animal_quantity ; i++)
 		animal[i] = new Dog();
+	std::cout << (*animal[0]).getType();
+	//std::cout << (animal[0])->brain;
+	std::cout << std::endl;
 	for (unsigned int i = 0 ; i < animal_quantity ; i++)
 		delete animal[i];
+
+		*/
 	// testConstructors();
 	// mandatoryMain();
 	// mandatoryWrong();
