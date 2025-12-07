@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 01:04:57 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:31:06 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:38:16 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Brain&	Brain::operator=(const Brain& rhs)
 {
 	if (this != &rhs)
 	{
-		for (int i = 0; i <= 100; i++)
+		for (int i = 0; i < 100; i++)
 			this->ideas[i] = rhs.getIdea(i);
 	}
 	return (*this);

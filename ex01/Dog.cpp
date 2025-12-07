@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:51:39 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:28:48 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,15 @@ Dog::Dog(): Animal()
 	this->brain = new Brain();
 	msg = "'" + this->type + "' created Default Constructor Called";
 	std::cout << msg << std::endl;
+}
+
+Dog::Dog(const Brain &rhs)
+{
+	std::string	msg;
+
+	this->type = "Dog";
+	msg = "'" + this->type + "' created Parameterized Constructor Called";
+	this->brain = (Brain *)&rhs;
 }
 
 Dog::~Dog()

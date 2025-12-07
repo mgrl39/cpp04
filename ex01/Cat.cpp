@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:40:23 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:33:06 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,15 @@ Cat::Cat(const Cat &rhs)
 {
 	std::cout << "Cat Copy constructor called" << std::endl;
 	*this = rhs;
+}
+
+Cat::Cat(const Brain &rhs)
+{
+	std::string	msg;
+
+	this->type = "Cat";
+	msg = "'" + this->type + "' created Parameterized Constructor Called";
+	this->brain = (Brain *)&rhs;
 }
 
 Cat&	Cat::operator=(const Cat& rhs)

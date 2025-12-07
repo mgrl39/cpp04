@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 21:19:15 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:35:20 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,11 +81,28 @@ void	secondExercise()
 {
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	//j->setIdea(0, "Hello World");
 	j->makeSound();
+	i->makeSound();
 	delete j;//should not create a leak
 	delete i;
 }
+
+void	secondExerciseMyTest()
+{
+	{
+		Brain *brain = new Brain();
+
+		brain->setIdea(0, "This is my first Idea");
+		std::cout << brain->getIdea(0) << std::endl;
+		std::cout << brain->getIdea(-1) << std::endl;
+		std::cout << brain->getIdea(100) << std::endl;
+		Brain second(*brain);
+		delete brain;
+		(void)second;
+		//std::cout << second->getIdea(0) << std::endl;
+	}
+}
+
 
 #include <typeinfo>
 int	main(void)
@@ -98,7 +115,8 @@ int	main(void)
 	(void)animal_quantity;
 	(void)animal;
 	*/
-	secondExercise();
+	//secondExercise();
+	secondExerciseMyTest();
 	/*
 	for (unsigned int i = 0 ; i < animal_quantity / 2 ; i++)
 		animal[i] = new Cat();

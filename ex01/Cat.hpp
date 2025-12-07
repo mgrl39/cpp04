@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:24 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:34:47 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:25:23 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Cat: public Animal
 		Brain	*brain;
 	public:
 		Cat();
+		Cat(const Brain &brain);
 		~Cat();
 		Cat(const Cat &rhs);
 		Cat &operator=(const Cat &rhs);

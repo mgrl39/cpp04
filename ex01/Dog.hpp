@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:01 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:34:36 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:25:20 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Dog: public Animal
 		Brain	*brain;
 	public:
 		Dog();
+		Dog(const Brain &brain);
 		~Dog();
 		Dog(const Dog &rhs);
 		Dog &operator=(const Dog &rhs);
