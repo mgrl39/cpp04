@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 02:38:53 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 20:40:35 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ Dog::Dog(const Dog &rhs)
 
 Dog& Dog::operator=(const Dog& rhs)
 {
-	//std::cout << "Dog Copy assignment operator called" << std::endl;
+	std::cout << "Dog Copy assignment operator called" << std::endl;
 	if (this != &rhs)
 	{
+		Animal::operator=(rhs);
 		delete this->brain;
 		this->brain = new Brain(*rhs.brain);
-		this->type = rhs.getType();
 	}
 	return (*this);
 }
