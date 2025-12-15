@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/15 12:34:06 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/15 12:39:16 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,25 +17,22 @@
 #include "Cat.hpp"
 #include <iostream>
 
-# define RED "\033[31m"
-# define CYAN "\033[36m"
-# define RES "\033[0m"
 # define YELLOW "\033[33m"
-# define GREEN "\033[32m"
+# define RES 	"\033[0m"
 
 void	writeText(std::string color, std::string text)
 {
 	std::string	var;
 
 	if (color == "red")
-		var = RED;
+		var = "\033[31m";
 	else if (color == "cyan")
-		var = CYAN;
+		var = "\033[36m";
 	else if (color == "yellow")
-		var = YELLOW;
+		var = "\033[33m";
 	else
-		var = GREEN;
-	std::cout << var << text << RES << std::endl;
+		var = "\033[32m";
+	std::cout << var << text << "\033[0m" << std::endl;
 
 }
 
