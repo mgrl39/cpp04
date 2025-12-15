@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 00:52:43 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/07 22:35:20 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	testConstructors(void)
 
 }
 
+// First exercise
 void	mandatoryMain()
 {
 	const Animal* meta = new Animal();
@@ -72,9 +73,63 @@ void	mandatoryWrong()
 	delete j;
 }
 
+/* Second exercise:
+ * A copy of a Dog or a Cat mustn’t be shallow. 
+ * Thus, you have to test that your copies are deep copies!
+ */
+void	secondExercise()
+{
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	j->makeSound();
+	i->makeSound();
+	delete j;//should not create a leak
+	delete i;
+}
+
+void	secondExerciseMyTest()
+{
+	{
+		Brain *brain = new Brain();
+
+		brain->setIdea(0, "This is my first Idea");
+		std::cout << brain->getIdea(0) << std::endl;
+		std::cout << brain->getIdea(-1) << std::endl;
+		std::cout << brain->getIdea(100) << std::endl;
+		Brain second(*brain);
+		delete brain;
+		(void)second;
+		//std::cout << second->getIdea(0) << std::endl;
+	}
+}
+
+
+#include <typeinfo>
 int	main(void)
 {
+	/*
+	const unsigned int	animal_quantity = 6;
+
+	Animal *animal[animal_quantity];
+
+	(void)animal_quantity;
+	(void)animal;
+	*/
+	//secondExercise();
+	secondExerciseMyTest();
+	/*
+	for (unsigned int i = 0 ; i < animal_quantity / 2 ; i++)
+		animal[i] = new Cat();
+	for (unsigned int i = animal_quantity / 2 ; i < animal_quantity ; i++)
+		animal[i] = new Dog();
+	std::cout << (*animal[0]).getType();
+	//std::cout << (animal[0])->brain;
+	std::cout << std::endl;
+	for (unsigned int i = 0 ; i < animal_quantity ; i++)
+		delete animal[i];
+
+		*/
 	// testConstructors();
-	mandatoryMain();
-	mandatoryWrong();
+	// mandatoryMain();
+	// mandatoryWrong();
 }
