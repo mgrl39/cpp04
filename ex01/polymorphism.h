@@ -6,12 +6,18 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 12:54:51 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/15 13:01:43 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/15 13:08:47 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef POLYMORPHISM_H
 # define POLYMORPHISM_H
+
+# include "Animal.hpp"
+# include "Dog.hpp"
+# include "WrongAnimal.hpp"
+# include "WrongCat.hpp"
+# include "Cat.hpp"
 
 # define RED	"\033[31m"
 # define CYAN	"\033[36m"
