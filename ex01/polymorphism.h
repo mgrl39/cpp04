@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 12:54:51 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/15 12:59:33 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/15 13:01:43 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 # define RES 	"\033[0m"
 
 void	writeText(std::string color, std::string text);
-void	testAnimalConstructors();
-void	testCatConstructors();
-void	testDogConstructors();
-void	firstMainFromSubject();
-void	wrongAnimalImplementation();
+void	testAnimalConstructors(void);
+void	testCatConstructors(void);
+void	testDogConstructors(void);
+void	firstMainFromSubject(void);
+void	wrongAnimalImplementation(void);
 #endif
