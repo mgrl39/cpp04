@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/15 12:39:16 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/15 12:59:35 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,23 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 #include "Cat.hpp"
+#include "polymorphism.h"
 #include <iostream>
 
-# define YELLOW "\033[33m"
-# define RES 	"\033[0m"
 
 void	writeText(std::string color, std::string text)
 {
 	std::string	var;
 
 	if (color == "red")
-		var = "\033[31m";
+		var = RED;
 	else if (color == "cyan")
-		var = "\033[36m";
+		var = CYAN;
 	else if (color == "yellow")
-		var = "\033[33m";
+		var = YELLOW;
 	else
-		var = "\033[32m";
-	std::cout << var << text << "\033[0m" << std::endl;
-
+		var = GREEN;
+	std::cout << var << text << RES << std::endl;
 }
 
 void	testAnimalConstructors()
@@ -116,7 +114,7 @@ void	testDogConstructors()
  * the subject is the colors
  * and the deletes
  */
-void	mainFromSubject()
+void	firstMainFromSubject()
 {
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
@@ -156,7 +154,8 @@ int	main(void)
 	testDogConstructors();
 	*/
 	writeText("cyan", "=========== main from subject =========");
-	mainFromSubject();
+	firstMainFromSubject();
 	writeText("cyan", "=========== wronganimal wrongcat main implementation ===========");
 	wrongAnimalImplementation();
+	return (0);
 }
