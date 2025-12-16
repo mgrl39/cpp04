@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 20:49:18 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 23:12:09 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,6 @@ Dog::Dog(): Animal()
 	std::cout << msg << std::endl;
 }
 
-Dog::Dog(const Brain &rhs)
-{
-	std::string	msg;
-
-	this->type = "Dog";
-	msg = "'" + this->type + "' created Parameterized Constructor Called";
-	this->brain = (Brain *)&rhs;
-}
-
 Dog::~Dog()
 {
 	delete this->brain;
@@ -41,7 +32,17 @@ Dog::~Dog()
 Dog::Dog(const Dog &rhs): Animal(rhs)
 {
 	std::cout << "Dog Copy constructor called" << std::endl;
+	this->brain = new Brain(*rhs.brain);
 	*this = rhs;
+}
+
+Dog::Dog(const Brain &rhs)
+{
+	std::string	msg;
+
+	this->type = "Dog";
+	this->brain = new Brain(rhs);
+	msg = "'" + this->type + "' created Parameterized Constructor Called";
 }
 
 Dog& Dog::operator=(const Dog& rhs)
