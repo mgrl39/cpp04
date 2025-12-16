@@ -6,14 +6,14 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 12:54:51 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:19:51 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 22:14:21 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef POLYMORPHISM_H
 # define POLYMORPHISM_H
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Dog.hpp"
 # include "WrongAnimal.hpp"
 # include "WrongCat.hpp"

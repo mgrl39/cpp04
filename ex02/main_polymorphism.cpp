@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:42:58 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 22:16:06 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ void	writeText(std::string color, std::string text)
 	std::cout << var << text << RES << std::endl;
 }
 
+/*
+ * // Now Animal is abstract so we cannot instanciate it:
+ * 		// variable type 'Animal' is an abstract class
 void	testAnimalConstructors()
 {
 	writeText("", "Default Constructor ~~~~~~~~~~~~~~~~~~~~");
@@ -52,6 +55,7 @@ void	testAnimalConstructors()
 		writeText("yellow", second.getType());
 	}
 }
+*/
 
 void	testCatConstructors()
 {
@@ -104,10 +108,10 @@ void	testDogConstructors()
 }
 
 /*
+ * ANIMAL NOW IS ABSTRACT THATS WHY THIS IS COMMENTED
  * The only thing changed here from the original main of 
  * the subject is the colors
  * and the deletes
- */
 void	firstMainFromSubject()
 {
 	const Animal* meta = new Animal();
@@ -124,6 +128,7 @@ void	firstMainFromSubject()
 	delete j;
 	delete i;
 }
+*/
 
 void	wrongAnimalImplementation()
 {

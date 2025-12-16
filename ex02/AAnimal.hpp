@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   AAnimal.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:34:35 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 20:34:18 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 22:13:52 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Animal
 		virtual ~Animal();
 		Animal(const Animal &rhs);
 		Animal &operator=(const Animal &rhs);
-		virtual void	makeSound() const;
+		virtual void	makeSound() const = 0;
 		const std::string	getType() const;
 };
 
