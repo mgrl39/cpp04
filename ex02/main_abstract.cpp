@@ -6,8 +6,14 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 21:50:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:50:20 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 21:56:48 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "polymorphism.h"
+#include "brain.h"
 
+int	main(void)
+{
+	return (0);
+}
