@@ -6,11 +6,12 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 13:08:53 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:42:45 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 21:47:39 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "polymorphism.h"
+#include "brain.h"
 
 void	testBrainConstructors()
 {
