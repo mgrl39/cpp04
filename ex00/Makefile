@@ -6,14 +6,14 @@
 #    By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/05 12:33:33 by meghribe          #+#    #+#              #
-#    Updated: 2025/12/15 12:56:44 by meghribe         ###   ########.fr        #
+#    Updated: 2025/12/16 21:39:35 by meghribe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX := c++
 RM := rm -f
 NAME := polymorphism
-SRCS := Animal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS := Animal.cpp Cat.cpp Dog.cpp main_polymorphism.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS := $(SRCS:.cpp=.cpp.o)
 INCS := Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp polymorphism.h
 DEBUG := -g -fsanitize=address -pedantic
