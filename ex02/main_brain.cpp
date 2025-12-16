@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 13:08:53 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:56:00 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 22:50:45 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,14 +76,35 @@ void	testDeepCopyBrain()
 	delete anotherCopiedCat;
 }
 
-/*
-int	main(void)
+void	testArrayFilled()
 {
-	testAnimalConstructors();
-	testCatConstructors();
-	testDogConstructors();
-	testBrainConstructors();
-	testDeepCopyBrain();
-	return (0);
+	writeText("red", "Mandatory Animal's Array half Dogs half Cats ~~~~~~~~~~~~~~~~~~~~");
+	Animal *array[6];
+
+	for (int i = 0; i < 6; i++)
+	{
+		if (6 / 2 > i)
+			array[i] = new Dog();
+		else
+			array[i] = new Cat();
+	}
+	for (int i = 0; i < 6; i++)
+		writeText("yellow", array[i]->getType());
+	for (int i = 0; i < 6; i++)
+		array[i]->makeSound();
+	for (int i = 0; i < 6; i++)
+		delete array[i];
 }
-*/
+
+/*
+   int	main(void)
+   {
+   testAnimalConstructors();
+   testCatConstructors();
+   testDogConstructors();
+   testBrainConstructors();
+   testDeepCopyBrain();
+   testArrayFilled();
+   return (0);
+   }
+   */
