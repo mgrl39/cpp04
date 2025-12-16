@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:05 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 22:28:48 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 20:49:18 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,9 @@ Dog& Dog::operator=(const Dog& rhs)
 void	Dog::makeSound() const
 {
 	std::cout << "Dog barks: woof" << std::endl;
+}
+
+Brain*	Dog::getBrain() const
+{
+	return (this->brain);
 }

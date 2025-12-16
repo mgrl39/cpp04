@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:24 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 22:25:23 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 20:49:01 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Cat: public Animal
 		Cat(const Cat &rhs);
 		Cat &operator=(const Cat &rhs);
 		void makeSound() const;
+		Brain*	getBrain() const;
 };
 
 #endif

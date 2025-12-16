@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 22:33:06 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 21:12:22 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ Cat::~Cat()
 Cat::Cat(const Cat &rhs): Animal(rhs)
 {
 	std::cout << "Cat Copy constructor called" << std::endl;
+	this->brain = new Brain(*rhs.brain);
 	*this = rhs;
 }
 
@@ -40,8 +41,8 @@ Cat::Cat(const Brain &rhs)
 	std::string	msg;
 
 	this->type = "Cat";
+	this->brain = new Brain(rhs);
 	msg = "'" + this->type + "' created Parameterized Constructor Called";
-	this->brain = (Brain *)&rhs;
 }
 
 Cat&	Cat::operator=(const Cat& rhs)
@@ -59,4 +60,9 @@ Cat&	Cat::operator=(const Cat& rhs)
 void	Cat::makeSound() const
 {
 	std::cout << "Cat meows: meow" << std::endl;
+}
+
+Brain*	Cat::getBrain() const
+{
+	return (this->brain);
 }

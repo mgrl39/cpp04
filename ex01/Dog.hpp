@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 12:35:01 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/07 22:25:20 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 20:49:08 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Dog: public Animal
 		Dog(const Dog &rhs);
 		Dog &operator=(const Dog &rhs);
 		void makeSound() const;
+		Brain*	getBrain() const;
 };
 
 #endif
