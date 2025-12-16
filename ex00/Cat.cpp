@@ -27,7 +27,7 @@ Cat::~Cat()
 	std::cout << "'" << this->type << "' destroyed (Destructor called)" << std::endl;
 }
 
-Cat::Cat(const Cat &rhs)
+Cat::Cat(const Cat &rhs): Animal(rhs)
 {
 	std::cout << "Cat Copy constructor called" << std::endl;
 	*this = rhs;

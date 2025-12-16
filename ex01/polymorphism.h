@@ -18,6 +18,7 @@
 # include "WrongAnimal.hpp"
 # include "WrongCat.hpp"
 # include "Cat.hpp"
+# include "Brain.hpp"
 
 # define RED	"\033[31m"
 # define CYAN	"\033[36m"
