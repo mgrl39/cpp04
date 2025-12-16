@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 21:46:27 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 21:47:08 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/16 22:45:14 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@
 
 void	testBrainConstructors();
 void	testDeepCopyBrain();
+void	testArrayFilled();
 
 #endif
