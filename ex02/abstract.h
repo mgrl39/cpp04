@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_abstract.cpp                                  :+:      :+:    :+:   */
+/*   abstract.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/16 21:50:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 22:20:43 by meghribe         ###   ########.fr       */
+/*   Created: 2025/12/16 22:20:32 by meghribe          #+#    #+#             */
+/*   Updated: 2025/12/16 22:20:35 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "polymorphism.h"
-#include "brain.h"
-#include "abstract.h"
+#ifndef ABSTRACT_H
+# define ABSTRACT_H
 
-int	main(void)
-{
-	return (0);
-}
+#endif
