@@ -6,7 +6,7 @@
 /*   By: meghribe <meghribe@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 21:50:20 by meghribe          #+#    #+#             */
-/*   Updated: 2025/12/16 22:55:22 by meghribe         ###   ########.fr       */
+/*   Updated: 2025/12/17 10:54:59 by meghribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,12 @@ void	testAbstractClassInstance()
 
 int	main(void)
 {
+	// testAnimalConstructors(); <-- this now does not work
 	testCatConstructors();
 	testDogConstructors();
+	testBrainConstructors();
+	testDeepCopyBrain();
+	testArrayFilled();
 	// testAbstractClassInstance();
 	return (0);
 }
